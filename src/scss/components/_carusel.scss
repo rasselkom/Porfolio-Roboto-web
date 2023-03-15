@@ -1,0 +1,156 @@
+.carusel{
+
+  &__container{
+    position: relative;
+    padding: 0px 55px 500px 55px;
+    overflow: hidden;
+  }
+  &__dots{
+    margin: 0 auto;
+    padding-bottom: 64px;
+  }
+  &__title{
+    margin: 0;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 61px;
+    text-align: center;
+    color: var(--dark-color);
+    margin-bottom: 120px;
+  }
+
+  .swiper {
+    position: absolute;
+    top: 200px;
+    right: -100px;
+    width: 1435px;
+    height: 371px;
+    margin-bottom: 226px;
+  }
+  .swiper-wrapper{
+    padding-left: 50px;
+  }
+  .swiper-button-next{
+    right: 200px;
+  }
+
+  .slide__item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    width: 303.72px;
+    height: 371px;
+
+    &-blue{
+      background: linear-gradient(18.36deg, #844FFC 9.87%, #491EB8 118.71%);
+    }
+    &-red{
+      background: linear-gradient(19.99deg, #FE7967 -0.66%, #F73757 95.81%);
+    }
+    &-light{
+      background: linear-gradient(29.62deg, #49A0FF 1.68%, #077EFF 101.42%);
+    }
+    &-orange{
+      background: linear-gradient(19.99deg, #FF691C -0.66%, #F7C137 95.81%);
+    }
+    &-aqva{
+      background: linear-gradient(128.58deg, #72CFD4 9.29%, #42A0C2 83.38%);
+    }
+    &-violet{
+      background: linear-gradient(128.58deg, #E477AE 9.29%, #C54284 83.38%);
+    }
+  }
+
+  .slide__img{
+    max-width: 300px;
+    margin-bottom: 8px;
+  }
+  .img{
+    border-radius: 30px;
+    width: 300px;
+    height: 360px;
+
+  }
+  .slide__title{
+    margin: 0;
+    padding-bottom: 8px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: var(--light-color);
+  }
+  .slide__text{
+    margin: 0;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 130%;
+    text-align: center;
+    color: var(--light-color);
+  }
+  .swiper-button-prev{
+    border-radius: 30px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.05), 0px 20px 40px rgba(92, 103, 153, 0.2);
+    background: var(--light-color);
+    width: 64px;
+    height: 64px;
+    background-image: url('../img/svg/prev.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &::after{
+      display: none;
+    }
+  }
+  .swiper-button-next{
+  border-radius: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.05), 0px 20px 40px rgba(92, 103, 153, 0.2);
+  background: var(--light-color);
+  width: 64px;
+  height: 64px;
+  background-image: url('../img/svg/next.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &::after {
+    display: none;
+    }
+  }
+}
+@include big-desktop {
+  .swiper{
+    position: absolute;
+    top: 0px;
+    left:-10px;
+  }
+}
+@include for-desktop{
+  .slide__item{
+    width: 253px !important;
+    height: 308px !important;
+    }
+  .swiper{
+    width: 900px !important;
+  }
+   .swiper-button-prev,
+  .swiper-button-next{
+    display: none;
+  }
+}
+@include mobile{
+  .carusel__title{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 30px;
+  }
+  .swiper{
+    width: 600px !important;
+  }
+}
+

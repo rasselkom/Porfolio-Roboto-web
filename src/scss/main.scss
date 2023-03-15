@@ -1,0 +1,25 @@
+// базовые подключения
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+
+// подключения компонентов страницы
+@import "./components/modal";
+@import "./components/header";
+@import "./components/nav";
+@import "./components/tabs";
+@import "./components/hero";
+@import "./components/hero-record";
+@import "./components/hero-entry";
+@import "./components/card";
+@import "./components/about";
+@import "./components/main-about";
+@import "./components/lesson";
+@import "./components/veb";
+@import "./components/carusel";
+@import "./components/acordion";
+@import "./components/footer";
+
+// тестовые стили, удалите их
+

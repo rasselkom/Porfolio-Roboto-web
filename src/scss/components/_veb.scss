@@ -1,0 +1,99 @@
+.veb{
+  min-height: 100vh;
+
+  &__box{
+    display: flex;
+  }
+  &__video-box{
+    border-radius: 20px;
+    background-color: black;
+    margin-top: 40px;
+    max-width: 700px;
+    max-height: 500px;
+  }
+
+  &__video{
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__descr-box{
+   max-width: 340px;
+  }
+  &__photo-box{
+    display: flex;
+    justify-content: center;
+
+  }
+  &__photo{
+    margin-right: 20px;
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+  }
+  &__descr-box{
+    margin: 40px 0px 0px 30px;
+
+  }
+  &__descr{
+    color:var(--dark-color);
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  &__name{
+    margin: 0;
+    min-width: 220px;
+    color:var(--dark-color);
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    &-messege{
+      margin-top: 20px;
+      padding: 20px;
+      border-radius: 0px 20px 20px 20px;
+      background-color:  #CCD0FC;;
+    }
+
+    span{
+     display: block;
+     margin-top: 20px;
+      color:var(--gray-color);
+    }
+  }
+  &__bottom-box{
+    display: flex;
+  }
+  &__bottom{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-right: 20px;
+
+  }
+  &__svg{
+    width: 20px;
+    height: 20px;
+
+    &-blue{
+      fill: blue;
+    }
+  }
+  &__text{
+    margin: 0;
+    padding-left: 10px;
+    color:var(--dark-color);
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+@include tablet{
+  .veb__box{
+    flex-direction: column-reverse;
+  }
+}

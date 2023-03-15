@@ -1,0 +1,127 @@
+.lesson{
+  &__container{
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 350px 1fr;
+  }
+  &__right{
+    padding: 70px 20px 20px 20px;
+    background-color: #f2f5f3;
+  }
+  &__left{
+    padding: 70px 0px 20px 50px;
+  }
+  &__img-user{
+    border-radius: 100%;
+    background-color: #fff;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+  }
+  &__serch-box{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__input-box{
+    position: relative;
+  }
+  &__inp-img{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 30px;
+    height: 30px;
+  }
+  &__inp{
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 10px 40px;
+    width: 500px;
+    outline: none;
+    border: none;
+    margin-bottom: 50px;
+  }
+
+  &__list{
+    margin-top: 100px;
+  }
+
+  &__item{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+
+    a{
+      color:var(--dark-color);
+      font-family: 'Montserrat';
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 24px;
+
+    }
+  }
+  &__main-link{
+    font-weight: 500;
+    color: var(--gray-color);
+  }
+
+  &__icon-box{
+    background: linear-gradient(128.58deg, #E477AE 9.29%, #C54284 83.38%);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    margin: 0px 30px 0px 0px;
+
+
+    svg{
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      fill: #fff;
+    }
+
+    &-grey{
+      background: linear-gradient(128.58deg, #72CFD4 9.29%, #42A0C2 83.38%);
+
+    }
+    &-blue{
+      background: linear-gradient(18.36deg, #844FFC 9.87%, #491EB8 118.71%);
+    }
+  }
+  &__prev{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+  &__prev-img{
+      width: 15px;
+      height: 15px;
+  }
+  &__prev-text{
+    padding-left: 10px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--gray-color);
+  }
+}
+@include big-desktop{
+  .lesson__container{
+    display: block;
+  }
+}
+@include tablet{
+  .lesson__serch-box{
+    flex-direction: column-reverse;
+  }
+  .lesson__inp-img{
+    margin-bottom: 20px;
+  }
+  .lesson__inp{
+    max-width: 300px;
+  }
+}

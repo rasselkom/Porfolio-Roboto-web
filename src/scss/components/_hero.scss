@@ -1,0 +1,224 @@
+.hero{
+  &__container{
+  display: flex;
+  padding:0px 50px ;
+  height: 900px;
+  background-image: url('../img/bg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  }
+
+  &__right{
+    margin-left: 89px;
+  }
+
+  &__title{
+  margin: 0;
+  padding-top: 150px;
+  max-width: 746px;
+  font-family: 'Montserrat';
+  font-weight: 800;
+  font-size: 60px;
+  line-height: 113%;
+  color: var(--light-color);
+  mix-blend-mode: normal;
+  text-shadow: 0px 20px 40px rgba(0, 0, 0, 0.15);
+  margin-bottom: 24px;
+
+  span{
+    color: #8FE4FF;
+    }
+  }
+&__descr {
+  margin: 0;
+  max-width: 496px;
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 140%;
+  color: var(--light-color);
+  margin-bottom: 32px;
+ }
+ &__form{
+  border-radius: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.05), 0px 20px 40px rgba(92, 103, 153, 0.2);
+  padding: 24px;
+  max-width: 418px;
+  height: 362px;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(20px);
+ }
+ &__form-title{
+  margin: 0;
+  padding-bottom: 24px;
+  font-family: 'Montserrat';
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: var(--dark-color);
+ }
+ &__input{
+  padding: 0px 15px;
+  border-radius: 30px;
+  border: 1px solid #DBE1FF;
+  width: 100%;
+  height: 48px;
+  background: var(--light-color);
+  outline: none;
+  &:not(:last-of-type){
+    margin-bottom: 8px;
+  }
+  &:last-of-type{
+    margin-bottom: 16px;
+  }
+  &::placeholder{
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #969AAE;
+  }
+ }
+ &__form-btn{
+  border-radius: 30px;
+  height: 48px;
+  width: 100%;
+  padding: 13.5px 0px;
+  background: #7224F3;
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.15);
+  color: var(--light-color);
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 21px;
+  margin-bottom: 19px;
+
+  a{
+    color: var(--light-color);
+  }
+ }
+ &__form-text{
+  position: relative;
+  margin: 0;
+  text-align: center;
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: var(--gray-color);
+  margin-bottom: 21px;
+  &::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 7px;
+    width: 134px;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.15);
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 7px;
+    width: 134px;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.15);
+  }
+ }
+ &__sotial{
+  display: flex;
+  justify-content: center;
+ padding-bottom: 24px;
+ }
+ &__sotial-item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:not(:last-child){
+    margin-right: 16px;
+  }
+  width: 48px;
+  height: 48px;
+  background-image: url('../img/svg/sercle.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+ }
+ &__left{
+  margin-top: 150px;
+  max-width: 700px;
+  max-height: 500px;
+  background-repeat: no-repeat;
+
+  img{
+    object-fit: cover;
+  }
+  }
+}
+@include big-desktop{
+  .hero__container{
+    padding: 0px 10px;
+    flex-direction: column-reverse;
+    align-items: center;
+    }
+  .hero__form-text{
+    &::before{
+      content: '';
+      width: 105px;
+    }
+    &::after {
+      content: '';
+      width: 105px;
+    }
+  }
+  .hero__left{
+    padding-top: 100px;
+    width: 391px;
+    height: 318px;
+    margin-bottom: 50px;
+  }
+  .hero__right{
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero__title{
+    padding-top: 20px;
+    max-width: 342px;
+    font-size: 28px;
+    line-height: 120%;
+    text-align: center;
+  }
+  .hero__descr{
+    max-width: 320px;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 140%;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.85);
+  }
+}
+@include mobile {
+  .hero__left{
+    margin-top: 50px;
+  }
+  .hero__left{
+    padding-top:0px;
+    width: 291px;
+    height: 218px;
+    margin-bottom: 0px;
+  }
+  .hero__form-text{
+    &::before{
+      content: '';
+      width: 80px;
+    }
+    &::after {
+      content: '';
+      width: 80px;
+    }
+  }
+}
+

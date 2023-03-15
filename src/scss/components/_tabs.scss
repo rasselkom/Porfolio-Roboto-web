@@ -1,0 +1,30 @@
+.tabs{
+padding: 0;
+min-height: 100vh;
+
+&__nav-item{
+  margin-top: 30px;
+  &:not(:last-child){
+    margin-right: 60px;
+  }
+}
+&__nav-btn{
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: var(--gray-color);
+  margin-bottom: 30px;
+}
+}
+@include mobile{
+  .tabs__nav-btn{
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .tabs__nav-item{
+    &:not(:last-child){
+      margin-right: 20px;
+    }
+  }
+}

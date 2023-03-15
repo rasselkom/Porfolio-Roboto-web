@@ -1,0 +1,112 @@
+.card{
+  &__container{
+    padding: 0px 55px;
+  }
+  &__dots{
+    margin: 0 auto;
+  }
+  &__title{
+    margin: 0;
+    padding: 64px 0px 120px 0px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 61px;
+    text-align: center;
+  }
+  &__list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+
+  &__item{
+    border-radius: 34px;
+    max-width: 417px;
+    height: 155px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 9px;
+    border-radius: 34px;
+
+      &:nth-child(1){
+        background: linear-gradient(133.82deg, #FEBBBB 2.32%, #922BF9 93.74%);
+      }
+      &:nth-child(2){
+        background: linear-gradient(136.64deg, #00AEFF 11.53%, #0076FF 79.11%);
+      }
+      &:nth-child(3) {
+        background: linear-gradient(133.82deg, #FEBBBB 2.32%, #922BF9 93.74%);
+      }
+      &:nth-child(4) {
+      background: linear-gradient(128.58deg, #72CFD4 9.29%, #42A0C2 83.38%);
+      }
+      &:nth-child(5) {
+        background: linear-gradient(128.58deg, #E477AE 9.29%, #C54284 83.38%);
+      }
+      &:nth-child(6) {
+      background: linear-gradient(128.58deg, #6B1F9E 9.29%, #6B1F9E 83.38%)
+      }
+    }
+    &__item-main{
+      padding: 0px 15px;
+    }
+
+  &__img-box{
+    margin-left: 10px;
+    max-width: 142px;
+    max-height: 139px;
+  }
+
+  &__descr{
+    margin: 0;
+    max-width: 211px;
+    font-family: 'Montserrat';
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 130%;
+    color: var(--light-color);
+  }
+}
+@include big-desktop{
+.card__container{
+  padding: 87px 0px 0px 0px;
+}
+.card__title{
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  padding-bottom: 15px;
+}
+.card__list{
+  grid-template-columns: repeat(1, 1fr);
+  place-items: center;
+  gap: 15px;
+}
+.card__descr{
+  font-weight: 800;
+  font-size: 17px;
+  line-height: 130%;
+}
+.card__img-box{
+  margin: 0;
+  width: 90px;
+  height: 90px;
+}
+.card__item{
+  border-radius: 28px;
+  height: 120px;
+
+  &:nth-child(1){
+  flex-direction: row-reverse;
+  }
+
+  &:nth-child(3){
+    flex-direction: row-reverse;
+    }
+  &:nth-child(5){
+    flex-direction: row-reverse;
+    }
+}
+}
