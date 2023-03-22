@@ -10,12 +10,12 @@
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_slider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/slider */ "./src/js/components/slider.js");
-/* harmony import */ var _components_popup__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/popup */ "./src/js/components/popup.js");
+/* harmony import */ var _components_acordion__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/acordion */ "./src/js/components/acordion.js");
+/* harmony import */ var _components_acordion__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_components_acordion__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _components_tabs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/tabs */ "./src/js/components/tabs.js");
-/* harmony import */ var _components_burger__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/burger */ "./src/js/components/burger.js");
-/* harmony import */ var _components_burger__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_components_burger__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _components_acordion__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/acordion */ "./src/js/components/acordion.js");
-/* harmony import */ var _components_acordion__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_components_acordion__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _components_popup__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/popup */ "./src/js/components/popup.js");
+/* harmony import */ var _components_burger__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/burger */ "./src/js/components/burger.js");
+/* harmony import */ var _components_burger__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_components_burger__WEBPACK_IMPORTED_MODULE_4__);
 
 
 
