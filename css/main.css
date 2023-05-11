@@ -608,6 +608,16 @@ a {
   color: #969AAE;
 }
 .hero__form-btn {
+  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   border-radius: 30px;
   height: 48px;
   width: 100%;
@@ -1715,113 +1725,6 @@ a {
     width: 600px !important;
   }
 }
-.accordion__list {
-  margin: 0 auto;
-  max-width: 100%;
-}
-
-.accordion {
-  border-radius: 10px;
-  padding: 0px 15px;
-  background-color: #fff;
-  -webkit-box-shadow: 4px 4px 48px 0px rgba(34, 60, 80, 0.2);
-  box-shadow: 4px 4px 48px 0px rgba(34, 60, 80, 0.2);
-  margin-bottom: 10px;
-}
-.accordion__control {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding: 5px 0;
-  text-align: left;
-  width: 100%;
-  background-color: transparent;
-  cursor: pointer;
-  font-size: 20px;
-  line-height: 20px;
-  color: #242424;
-}
-.accordion__title-box {
-  margin-left: 30px;
-}
-.accordion__box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-.accordion__box svg {
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-}
-.accordion__content {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 140%;
-  color: rgba(36, 36, 36, 0.5);
-  max-height: 0;
-  opacity: 0;
-  overflow: hidden;
-  padding-right: 70px;
-  will-change: max-height;
-  -webkit-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-  -webkit-box-sizing: content-box;
-  box-sizing: content-box;
-}
-.accordion__title {
-  font-family: "Montserrat";
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 24px;
-  color: var(--dark-color);
-}
-.accordion__subtitle {
-  font-family: "Montserrat";
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  color: var(--gray-color);
-}
-.accordion__icon {
-  display: inline-block;
-  width: 25px;
-  height: 25px;
-  background-image: url("../img/cloze.svg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  -webkit-transition: -webkit-transform 0.3s ease-out;
-  transition: -webkit-transform 0.3s ease-out;
-  -o-transition: transform 0.3s ease-out;
-  transition: transform 0.3s ease-out;
-  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
-}
-.accordion:not(:first-child) {
-  margin-top: -1px;
-}
-
-.open .accordion__icon {
-  -webkit-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  transform: rotate(90deg);
-}
-
-.open .accordion__content {
-  opacity: 1;
-  padding-bottom: 18px;
-}
-
 .footer__container {
   background: #CCD0FC;
   padding: 49px 168px;

@@ -8,10 +8,10 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="theme-color" content="#111111">
   <title>MaxGraph New Site</title>
-  <link rel="preload" href="Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <!-- <link rel="preload" href="Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="Montserrat-Bold.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="Montserrat-ExtraBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="Montserrat-ExtraBold.woff2" as="font" type="font/woff2" crossorigin> -->
   <link rel="stylesheet" href="css/vendor.css">
   <link rel="stylesheet" href="css/main.css">
   <script defer src="js/main.js"></script>
@@ -31,12 +31,11 @@
         <li class="nav__item"><a href="#" class="nav__link">Форум</a></li>
       </ul>
       <div class="list-reset nav__list">
-           <button class="btn-reset header__btn">
-          <a class="header__link" href="entry.html">Войти</a>
-        </button>
-           <button class="btn-reset header__btn-white">
-          <a class="header__link" href="record.html"> Регистрация</a>
-         </button>
+
+          <a class="header__link header__btn" href="entry.html">Войти</a>
+
+          <a class="header__link header__btn-white" href="record.html"> Регистрация</a>
+
       </div>
     </nav>
     <button class="burger" aria-label="Открыть меню" aria-expanded="false"  data-burger>
@@ -57,9 +56,9 @@
       </p>
       <form action="#" class="hero__form">
         <p class="hero__form-title">Регистрация</p>
-        <input class="hero__input" type="name" placeholder="Имя">
+        <input class="hero__input" type="text" placeholder="Имя">
         <input class="hero__input" type="email" placeholder="Email">
-        <button class="btn-reset hero__form-btn"> <a href="record.html"></a> Создать аккаунт</button>
+      <a class="hero__form-btn" href="record.html">Создать аккаунт</a>
         <p class="hero__form-text">или через</p>
         <ul class="list-reset social hero__sotial" title="">
           <li class="social__item hero__sotial-item"><a href="#" target="_blank" class="social__link social__link--tw"
@@ -145,22 +144,22 @@
     </div>
     <div class="main-about__right item-2">
       <h2 class="main-about__title">Дидактические материалы</h2>
-      <div class="dots main-about__dots">
-        <img src="img/svg/dots.svg" aria-label="false">
-        <img src="img/svg/dots.svg" aria-label="false">
-        <img src="img/svg/dots.svg" aria-label="false">
-      </div>
+      <div class="dots card__dots">
+        <img src="img/svg/dots.svg"  alt="Лого троиточие">
+        <img src="img/svg/dots.svg"  alt="Лого троиточие">
+        <img src="img/svg/dots.svg"  alt="Лого троиточие">
+      </div>>
       <p class="main-about__descr">Мы разработали и систематизировали учебные материалы по робототехнике, электронике и программированию. Материалы доступны для ознакомления всем зарегистрированным пользователям.</p>
       <button class="btn-reset main-about__main-btn">Зарегистрироваться</button>
     </div>
     <div class="main-about__right item-3">
       <h2 class="main-about__title">Повышайте
         квалификацию с нами</h2>
-      <div class="dots main-about__dots">
-        <img src="img/svg/dots.svg" aria-label="false">
-        <img src="img/svg/dots.svg" aria-label="false">
-        <img src="img/svg/dots.svg" aria-label="false">
-      </div>
+        <div class="dots card__dots">
+          <img src="img/svg/dots.svg"  alt="Лого троиточие">
+          <img src="img/svg/dots.svg"  alt="Лого троиточие">
+          <img src="img/svg/dots.svg"  alt="Лого троиточие">
+        </div>
       <div class="main-about__descr-box">
         <p class="main-about__descr">Наши эксперты регулярно проводят обучающие вебинары, а на самом портале вы найдете множество инструкций к роботам.</p>
       </div>
@@ -173,19 +172,19 @@
     </div>
     <div class="main-about__right item-6">
       <h2 class="main-about__title">От новичка к профессионалу</h2>
-      <div class="dots main-about__dots">
-        <img src="img/svg/dots.svg" aria-label="false">
-        <img src="img/svg/dots.svg" aria-label="false">
-        <img src="img/svg/dots.svg" aria-label="false">
+      <div class="dots card__dots">
+        <img src="img/svg/dots.svg"  alt="Лого троиточие">
+        <img src="img/svg/dots.svg"  alt="Лого троиточие">
+        <img src="img/svg/dots.svg"  alt="Лого троиточие">
       </div>
       <p class="main-about__descr">Наша учебная программа охватывает все возрастные группы учащихся и может быть введена на любом этапе школьного образования.</p>
     </div>
     <div class="main-about__right item-7">
       <h2 class="main-about__title">Без ограничений</h2>
-      <div class="dots main-about__dots">
-        <img src="img/svg/dots.svg" aria-label="false">
-        <img src="img/svg/dots.svg" aria-label="false">
-        <img src="img/svg/dots.svg" aria-label="false">
+      <div class="dots card__dots">
+        <img src="img/svg/dots.svg"  alt="Лого троиточие">
+        <img src="img/svg/dots.svg"  alt="Лого троиточие">
+        <img src="img/svg/dots.svg"  alt="Лого троиточие">
       </div>
       <div class="main-about__descr-box">
         <p class="main-about__descr">Наша компетенция «гуманоидная робототехника» представлена на федеральном конкурсе профессионального мастерства для людей с инвалидностью «Абилимпикс».</p>
@@ -199,10 +198,10 @@
     </div>
     <div class="main-about__right item-10">
       <h2 class="main-about__title">Найдите единомышленников</h2>
-      <div class="dots main-about__dots">
-        <img src="img/svg/dots.svg" aria-label="false">
-        <img src="img/svg/dots.svg" aria-label="false">
-        <img src="img/svg/dots.svg" aria-label="false">
+      <div class="dots card__dots">
+        <img src="img/svg/dots.svg"  alt="Лого троиточие">
+        <img src="img/svg/dots.svg"  alt="Лого троиточие">
+        <img src="img/svg/dots.svg"  alt="Лого троиточие">
       </div>
       <p class="main-about__descr">Наша учебная программа охватывает все возрастные группы учащихся и может быть введена на любом этапе школьного образования.</p>
       <button class="btn-reset main-about__btn">Вступить в клуб</button>
@@ -213,9 +212,11 @@
       <section class="carusel">
   <div class="container carusel__container">
     <div class="dots carusel__dots">
-      <img src="img/svg/dots.svg" aria-label="false">
-      <img src="img/svg/dots.svg" aria-label="false">
-      <img src="img/svg/dots.svg" aria-label="false">
+      <div class="dots card__dots">
+        <img src="img/svg/dots.svg"  alt="Лого троиточие">
+        <img src="img/svg/dots.svg"  alt="Лого троиточие">
+        <img src="img/svg/dots.svg"  alt="Лого троиточие">
+      </div>
     </div>
     <h2 class="carusel__title">Наши продукты</h2>
     <div class="swiper">
@@ -268,7 +269,6 @@
     </div>
     <div class="swiper-button-prev"></div>
     <div class="swiper-button-next"></div>
-  </div>
   </div>
 </section>
 
