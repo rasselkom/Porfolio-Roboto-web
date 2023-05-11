@@ -1725,6 +1725,89 @@ a {
     width: 600px !important;
   }
 }
+.accordion__list {
+  margin: 0 auto;
+  max-width: 98%;
+}
+
+.accordion {
+  border-bottom: 1px solid #242424;
+}
+.accordion__img {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+}
+.accordion__control {
+  padding: 25px 0;
+  text-align: left;
+  width: 100%;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 20px;
+  color: #242424;
+}
+.accordion__content {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: rgba(36, 36, 36, 0.5);
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding-right: 70px;
+  will-change: max-height;
+  -webkit-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+.accordion__title {
+  font-weight: bold;
+  font-size: 1.17em;
+}
+.accordion__icon {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-image: url("../img/cloze.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  transition: -webkit-transform 0.3s ease-out;
+  -o-transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+}
+.accordion:not(:first-child) {
+  margin-top: -1px;
+}
+.accordion__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.open .accordion__icon {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.open .accordion__content {
+  opacity: 1;
+  padding-bottom: 18px;
+}
+
 .footer__container {
   background: #CCD0FC;
   padding: 49px 168px;
